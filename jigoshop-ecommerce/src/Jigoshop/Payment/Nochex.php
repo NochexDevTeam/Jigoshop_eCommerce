@@ -105,7 +105,7 @@ class Nochex implements Method2, Processable
 
 	private function getLogoImage()
 	{
-		return '<img src="https://www.nochex.com/logobase-secure-images/logobase-banners/clear-amex-mp.png" style="width:250px;height:auto;margin: auto 30px;" alt="" class="payment-logo" />';
+		return '<img src="https://www.nochex.com/logobase-secure-images/logobase-banners/clear.png" style="width:250px;height:auto;margin: auto 30px;" alt="" class="payment-logo" />';
 	}
 
 	/**
@@ -362,7 +362,7 @@ if ($_POST["optional_2"] == "Enabled"){
 		$testStatus = "live";
 	}
 	 
-	if ($response == "AUTHORISED") {  // searches response to see if AUTHORISED is present if it isn’t a failure message is displayed
+	if ($response == "AUTHORISED") {  // searches response to see if AUTHORISED is present if it isnÂ’t a failure message is displayed
 		$msg = "Callback was AUTHORISED. This was a " . $testStatus . " transaction.";// if AUTHORISED was found in the response then it was successful
 	} else { 
 		$msg = "Callback was not AUTHORISED.\r\n\r\n$debug";  // displays debug message  
@@ -399,7 +399,7 @@ if ($_POST["optional_2"] == "Enabled"){
 	$debug .= "$Index -> $Value\r\n"; 
 	$debug .= "\r\nRESPONSE:\r\n$response"; 		
 		 
-	if ($response == "AUTHORISED") {  // searches response to see if AUTHORISED is present if it isn’t a failure message is displayed
+	if ($response == "AUTHORISED") {  // searches response to see if AUTHORISED is present if it isnÂ’t a failure message is displayed
 		$msg = "APC was AUTHORISED. This was a " . $_POST["status"] . " transaction.";// if AUTHORISED was found in the response then it was successful
 	} else { 
 	   $msg = "APC was not AUTHORISED.\r\n\r\n$debug";  // displays debug message  
